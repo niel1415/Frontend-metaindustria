@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "Metaindustria Sprint 3",
+    "slug": "metaindustria-sprint4",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "web": { "bundler": "metro" }
+  }
+}
