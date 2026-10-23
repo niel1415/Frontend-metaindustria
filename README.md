@@ -19,13 +19,13 @@ O objetivo desta entrega é demonstrar o fluxo completo **Frontend → Service �
 ## Repositórios
 
 - **Backend Spring Boot:** `COLE_AQUI_O_LINK_DO_REPOSITORIO_BACKEND`
-- **Frontend Expo:** `COLE_AQUI_O_LINK_DO_REPOSITORIO_FRONTEND`
+- **Frontend Expo:** `https://github.com/niel1415/Frontend-metaindustria`
 
 > Antes de entregar, substitua os dois textos acima pelos links públicos dos repositórios finais.
 
 ## Vídeo da entrega
 
-- **YouTube - Não listado (até 5 minutos):** `COLE_AQUI_O_LINK_DO_VIDEO`
+- **YouTube - Não listado (até 5 minutos):** `https://youtu.be/buLz3d2Uz1M`
 
 > O vídeo deve estar como **Não listado**, nunca como Privado.
 
