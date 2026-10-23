@@ -9,25 +9,19 @@ O objetivo desta entrega é demonstrar o fluxo completo **Frontend → Service �
 | Integrante | RM |
 |---|---:|
 | Victor Augusto | 558338 |
-| Milena Queiroz | 55825 |
+| Milena Queiroz | 558825 |
 | Pedro Henrique | 558867 |
 | Gabriel Yeshua | 558273 |
 | Nicolas Alvares | 557271 |
 
-> Confira os RMs antes da entrega final e ajuste caso a turma utilize outra formatação oficial.
-
 ## Repositórios
 
-- **Backend Spring Boot:** `COLE_AQUI_O_LINK_DO_REPOSITORIO_BACKEND`
+- **Backend Spring Boot:** `https://github.com/niel1415/backend-metaindustria`
 - **Frontend Expo:** `https://github.com/niel1415/Frontend-metaindustria`
-
-> Antes de entregar, substitua os dois textos acima pelos links públicos dos repositórios finais.
 
 ## Vídeo da entrega
 
 - **YouTube - Não listado (até 5 minutos):** `https://youtu.be/buLz3d2Uz1M`
-
-> O vídeo deve estar como **Não listado**, nunca como Privado.
 
 ## Problema e solução
 
@@ -91,7 +85,7 @@ npm -v
 Clone o repositório do backend e entre na pasta:
 
 ```bash
-git clone COLE_AQUI_O_LINK_DO_REPOSITORIO_BACKEND
+git clone (https://github.com/niel1415/backend-metaindustria)
 cd backend-metaindustria
 ```
 
@@ -311,73 +305,5 @@ O frontend possui estados visíveis para:
 - erro de conexão com o backend.
 
 Nenhum mock é utilizado no fluxo principal.
-
-## Roteiro do vídeo - até 5 minutos
-
-### 0:00 - 0:35 | README e repositórios
-
-Mostrar o README no GitHub e dizer:
-
-> "Este é o projeto Metaindústria da Sprint 4. A entrega final é composta por uma API Spring Boot e um aplicativo Expo integrados. No README estão os integrantes e RMs, os links dos dois repositórios, os pré-requisitos, instruções de execução, configuração da BASE_URL e os endpoints utilizados."
-
-### 0:35 - 1:15 | Backend no ar + GET em JSON
-
-Mostrar o terminal executando `mvn spring-boot:run`. Em seguida abrir `http://localhost:8080/sensores`.
-
-> "O backend está executando na porta 8080. A aplicação utiliza Spring Boot com Controller, Service e Repository, além de banco H2 persistido em arquivo e CORS habilitado. Aqui podemos verificar o GET dos sensores retornando JSON diretamente da API."
-
-### 1:15 - 2:05 | Aplicativo listando a API
-
-Mostrar a tela inicial do app.
-
-> "No frontend utilizamos React Native com Expo e TypeScript. A comunicação está concentrada na pasta src/services. A tela inicial chama o serviço de listagem, que executa GET em /sensores e apresenta os registros retornados pelo backend. Não existem dados mockados nesse fluxo."
-
-### 2:05 - 3:05 | Cadastro no frontend e dado no backend
-
-Abrir **+ Novo**, preencher e salvar.
-
-> "Agora vou cadastrar um novo sensor diretamente pelo aplicativo. Ao salvar, o frontend executa um POST em /sensores. Depois do cadastro, a listagem é atualizada com os dados reais da API."
-
-Voltar ao navegador em `/sensores` e atualizar.
-
-> "Atualizando o endpoint diretamente no backend, o novo registro aparece no JSON. Isso comprova a integração entre o frontend, a API e o banco H2."
-
-### 3:05 - 3:35 | Detalhe
-
-Abrir um sensor no app.
-
-> "Ao selecionar um sensor, o aplicativo executa GET /sensores/{id} e exibe os dados retornados pela API na tela de detalhes."
-
-### 3:35 - 4:35 | Backend parado
-
-No terminal do Spring, pressionar `Ctrl + C`. Depois voltar ao app e atualizar.
-
-> "Para comprovar que o aplicativo não utiliza mock, vou desligar o backend. Agora, ao tentar recarregar os dados, a requisição não consegue acessar a API e o aplicativo apresenta uma mensagem de erro visível. Nenhum dado artificial substitui o backend."
-
-### 4:35 - 4:55 | Encerramento
-
-> "Com isso demonstramos a versão final integrada da Sprint 4: backend Spring Boot com CRUD, H2 file e CORS; frontend Expo com lista, cadastro e detalhe via API; tratamento de indisponibilidade; e documentação completa para reprodução do projeto."
-
-## Checklist antes da entrega
-
-- [ ] Backend está em um repositório acessível ao professor.
-- [ ] Frontend está em um repositório acessível ao professor.
-- [ ] Links dos dois repositórios foram colocados neste README.
-- [ ] Link do vídeo foi colocado neste README.
-- [ ] Vídeo está como **Não listado** no YouTube.
-- [ ] Vídeo tem no máximo 5 minutos.
-- [ ] Java 17 está informado.
-- [ ] Maven, Node e Expo estão informados.
-- [ ] Backend sobe na porta 8080.
-- [ ] `GET /sensores` retorna JSON.
-- [ ] O app lista registros vindos da API.
-- [ ] Cadastro no app aparece no backend.
-- [ ] Detalhe consulta a API por ID.
-- [ ] H2 está configurado em arquivo.
-- [ ] CORS está habilitado.
-- [ ] Não existe mock no fluxo principal.
-- [ ] Com backend desligado, o erro fica visível.
-
----
 
 **Sprint 4 - Metaindústria | Entrega Final**
